@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manager Dashboard | Sokoto State Hisbah Board</title>
+  <link rel="stylesheet" href="../style.css">
+  <script type="module" src="../js/manager-dashboard.js" defer></script>
+</head>
+<body class="manager-theme">
+  <header class="topbar">
+    <img src="../assets/logo.png" class="logo">
+    <h1>Manager Dashboard</h1>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <main class="dashboard-container">
+    <section class="cards-grid">
+      <div class="card" onclick="openSection('assignTasks')">
+        <h3>🗂 Assign Tasks</h3>
+        <p>Allocate daily tasks to staff</p>
+      </div>
+      <div class="card" onclick="openSection('reports')">
+        <h3>📑 Staff Reports</h3>
+        <p>Review performance reports</p>
+      </div>
+    </section>
+
+    <section id="assignTasks" class="hidden">
+      <h2>Assign New Task</h2>
+      <form id="taskForm">
+        <input type="text" placeholder="Task Title" required>
+        <textarea placeholder="Task Description" required></textarea>
+        <button type="submit">Assign Task</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>pp

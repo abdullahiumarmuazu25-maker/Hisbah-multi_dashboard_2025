@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Command Dashboard | Hisbah Board</title>
+  <link rel="stylesheet" href="../style.css">
+  <script type="module" src="../js/command-dashboard.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <img src="../assets/logo.png" class="logo">
+    <h1>Command Control Center</h1>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <main class="dashboard-container">
+    <section class="cards-grid">
+      <div class="card" onclick="openSection('trackMap')">
+        <h3>📍 Live GPS Map</h3>
+        <p>Monitor staff movement in real-time</p>
+      </div>
+      <div class="card" onclick="openSection('emergency')">
+        <h3>🚨 Emergency Alerts</h3>
+        <p>Respond to ongoing incidents</p>
+      </div>
+    </section>
+
+    <!-- Map tracking section -->
+    <section id="map-section" class="hidden">
+      <h2>Live Hisbah Map</h2>
+      <div id="map" style="width:100%;height:400px;"></div>
+    </section>
+  </main>
+
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDa3SAMPLEKEY-REPLACE&callback=initMap"></script>
+</body>
+</html>

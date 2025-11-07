@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Dashboard | Hisbah Board</title>
+  <link rel="stylesheet" href="../style.css">
+  <script type="module" src="../js/staff-dashboard.js" defer></script>
+</head>
+<body class="staff-theme">
+  <header class="topbar">
+    <img src="../assets/logo.png" class="logo">
+    <h1>Staff Dashboard</h1>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <main class="dashboard-container">
+    <section class="cards-grid">
+      <div class="card" onclick="openSection('myTasks')">
+        <h3>🧾 My Tasks</h3>
+        <p>View assigned duties</p>
+      </div>
+      <div class="card" onclick="openSection('reportIncident')">
+        <h3>📝 Report Incident</h3>
+        <p>Send field report</p>
+      </div>
+    </section>
+
+    <section id="reportIncident" class="hidden">
+      <h2>Submit Incident Report</h2>
+      <form id="incidentForm">
+        <textarea placeholder="Describe incident..." required></textarea>
+        <button type="submit">Send Report</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

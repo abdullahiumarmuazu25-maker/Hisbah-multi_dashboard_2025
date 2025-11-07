@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intelligence Unit | Hisbah Board</title>
+  <link rel="stylesheet" href="../style.css">
+  <script type="module" src="../js/intelligent-dashboard.js" defer></script>
+</head>
+<body class="intelligent-theme">
+  <header class="topbar">
+    <img src="../assets/logo.png" class="logo">
+    <h1>Intelligence Dashboard</h1>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <main class="dashboard-container">
+    <section class="cards-grid">
+      <div class="card" onclick="openSection('intelReports')">
+        <h3>🧩 Gather Intel</h3>
+        <p>Collect and analyze intelligence data</p>
+      </div>
+      <div class="card" onclick="openSection('alerts')">
+        <h3>⚠️ Send Alerts</h3>
+        <p>Send confidential alert to Admin</p>
+      </div>
+    </section>
+
+    <section id="intelReports" class="hidden">
+      <h2>Intel Report Submission</h2>
+      <form id="intelForm">
+        <textarea placeholder="Enter intelligence report..." required></textarea>
+        <button type="submit">Submit Report</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

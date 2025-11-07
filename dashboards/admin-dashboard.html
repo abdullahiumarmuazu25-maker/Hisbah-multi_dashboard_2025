@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Hisbah Intelligent System</title>
+  <link rel="stylesheet" href="../style.css">
+  <script type="module" src="../js/admin-dashboard.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <img src="../assets/logo.png" class="logo">
+    <h1>Hisbah Admin Dashboard</h1>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <main class="dashboard-container">
+    <section class="cards-grid">
+      <div class="card" onclick="openSection('manageStaff')">
+        <h3>👷 Manage Staff</h3>
+        <p>Add, view, and update staff records</p>
+      </div>
+      <div class="card" onclick="openSection('viewReports')">
+        <h3>📑 Reports</h3>
+        <p>View all submitted reports</p>
+      </div>
+      <div class="card" onclick="openSection('trackUnits')">
+        <h3>📍 Track Units</h3>
+        <p>View live map of Hisbah units</p>
+      </div>
+      <div class="card" onclick="openSection('intel')">
+        <h3>🧠 Intelligence</h3>
+        <p>Analyze incoming alerts</p>
+      </div>
+    </section>
+
+    <!-- Map Tracking Section -->
+    <section id="map-section" class="hidden">
+      <h2>Live GPS Tracking (Hisbah Units)</h2>
+      <div id="map" style="width:100%;height:400px;"></div>
+    </section>
+  </main>
+
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDa3SAMPLEKEY-REPLACE&callback=initMap"></script>
+</body>
+</html>
