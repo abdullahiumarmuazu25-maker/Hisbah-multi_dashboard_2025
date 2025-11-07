@@ -1,0 +1,13 @@
+{
+  "name": "Hisbah Multi Dashboard",
+  "short_name": "Hisbah",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007A33",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
