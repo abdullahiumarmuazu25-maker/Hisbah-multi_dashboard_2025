@@ -1,0 +1,100 @@
+/* css/style.css (excerpt, keep in one file) */
+:root{
+  --green:#007A33;
+  --accent:#ffd24d;
+  --bg:#f3fdf3;
+  --text:#04331f;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial, sans-serif;background:var(--bg);color:var(--text);margin:0}
+.topbar,.dash-topbar{background:linear-gradient(90deg,var(--green),#36a36b);color:#fff;padding:12px;display:flex;align-items:center;gap:12px}
+.logo{height:48px}
+.center-card{max-width:420px;margin:40px auto;padding:24px;background:#fff;border-radius:12px;box-shadow:0 8px 30px rgba(2,80,24,.06);text-align:center}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;background:var(--green);color:#fff;text-decoration:none}
+.btn.outline{background:transparent;border:2px solid var(--green);color:var(--green)}
+.auth-card{max-width:420px;margin:40px auto;padding:18px;background:#fff;border-radius:10px}
+.auth-card input, .auth-card select, .auth-card textarea{width:100%;padding:10px;margin:8px 0;border:1px solid #ddd;border-radius:8px}
+.dash-grid{display:flex;gap:16px;padding:18px}
+.dash-left{width:38%;background:#fff;padding:12px;border-radius:10px;height:calc(100vh - 120px);overflow:auto}
+.dash-right{flex:1;background:#fff;padding:12px;border-radius:10px;height:calc(100vh - 120px);overflow:auto}
+.small{font-size:13px;color:#666}
+.report-item{padding:8px;border-bottom:1px solid #eee}
+.alert-item{background:#fff1f1;border-left:4px solid #cc0000;padding:8px;margin:6px 0;border-radius:6px}
+textarea{min-height:80px}
+table{width:100%;border-collapse:collapse}
+table th,table td{padding:8px;border-bottom:1px solid #eee}
+button{background:var(--green);color:#fff;border:none;padding:8px 12px;border-radius:8px;cursor:pointer}
+
+:root{
+  --green: #007A33;
+  --green-700: #005f27;
+  --accent: #ffd24d;
+  --bg: #f3fdf3;
+  --card: #ffffff;
+  --muted: #6b6b6b;
+  --shadow: rgba(2,80,24,0.08);
+  --glass: rgba(255,255,255,0.6);
+  --success: #2e7d32;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, #f7fff7 0%, #ffffff 100%);
+  color: #063f16;
+  -webkit-font-smoothing:antialiased;
+}
+
+.topbar, .dash-topbar{
+  background: linear-gradient(90deg,var(--green),#36a36b);
+  color:#fff;
+  padding:12px 16px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.logo{height:48px; border-radius:6px; background:white; padding:4px}
+
+.center-card{
+  max-width:480px;
+  margin:48px auto;
+  padding:24px;
+  background:var(--card);
+  border-radius:12px;
+  box-shadow:0 10px 30px var(--shadow);
+  text-align:center;
+}
+
+.btn{display:inline-block;padding:10px 18px;border-radius:10px;background:var(--green);color:#fff;text-decoration:none;font-weight:600}
+.btn.outline{background:transparent;border:2px solid var(--green);color:var(--green)}
+
+.auth-card{max-width:480px;margin:36px auto;padding:18px;background:var(--card);border-radius:10px;box-shadow:0 6px 20px var(--shadow)}
+.auth-card input, .auth-card select, .auth-card textarea, input, select, textarea{
+  width:100%; padding:10px;margin:8px 0;border-radius:8px;border:1px solid #e6e6e6;background: #fff;
+  font-size:15px; outline:none;
+}
+.auth-card button{width:100%;padding:12px;border-radius:10px;border:none;background:var(--green);color:#fff;font-weight:700}
+
+.dashboard-container{display:flex;gap:16px;padding:16px;height:calc(100vh - 84px)}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.card{background: linear-gradient(180deg,var(--card),#f8fff8); padding:16px;border-radius:12px;box-shadow:0 8px 22px var(--shadow);cursor:pointer;transition:transform .18s}
+.card:hover{transform:translateY(-6px)}
+.hidden{display:none}
+
+.dash-left{width:36%;background:var(--card);padding:12px;border-radius:10px;height:calc(100vh - 120px);overflow:auto}
+.dash-right{flex:1;background:var(--card);padding:12px;border-radius:10px;height:calc(100vh - 120px);overflow:auto}
+
+table{width:100%;border-collapse:collapse}
+table th,table td{padding:8px;border-bottom:1px solid #f0f0f0;text-align:left}
+button{background:var(--green);color:white;border:none;padding:8px 12px;border-radius:8px;cursor:pointer}
+
+.map-card #map, #map { width:100%; height:400px; border-radius:10px; }
+
+.alert-item{background:#fff7f7;border-left:4px solid #d9534f;padding:8px;margin-bottom:8px;border-radius:6px}
+
+.small{font-size:13px;color:var(--muted)}
+.footer{padding:16px;text-align:center;color:var(--muted)}
